@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>login/signup</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container1
+		
+		{
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			margin: auto 0px;
+			background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url("hanger.jpg");
+			background-position: center;
+			background-size: cover;
+		
+		}
+		.form{
+			position: absolute;
+			margin-top: 140px;
+			margin-left: 600px;
+		
+		}
+		label
+		{
+			font-family: Gotham;
+			color: beige;
+			margin-top: 30px;
+			
+		}
+		input
+		{
+			height:28px;
+			width: 200px;
+			border-radius: 5px;
+			border: 1px solid rgba(178, 190, 195,0.5);
+          background: rgba(178, 190, 195,0.3);
+			box-sizing: border-box;
+			display: block;
+		}
+		#checkbox
+		{
+			float: left;
+			margin-top: 10%;
+			margin-left:-10px;
+			font-family: gotham;
+			font-size: 10px;
+			font-weight: normal;
+			color: white;
+			height: 20px;
+
+		}
+		h1
+		{
+			position: absolute;
+			margin-top: 60px;
+			margin-left: 600px;
+			font-family: gotham;
+			color: beige;
+		}
+		#submit
+		{
+			position: absolute;
+			margin-top: 50px;
+			font-family: gotham;
+			color: beige;
+		}
+		
+		</style>
+	<script type="text/javascript">
+		function detail()
+		{
+			var a= document.getElementById("name").value;
+			var b= document.getElementById("ctn").value;
+			var c= document.getElementById("email").value;
+			
+			
+			document.write("Thank you " +a+ " for loging in with Vriti rao. <br> We will send you a confirmation letter on you " +c);
+		}
+		
+	</script>
+</head>
+
+<body>
+	<div class="container1">
+
+	<h1>Login/Signup</h1>
+		
+		<div class="form">
+		<form>
+			<p><label class="lable">USERNAME</label><br>
+			<input type="text" name="" id="name" required></p>
+
+			<p><label>E-MAIL</label><br>
+			<input type="email" name="" required id="email"></p>
+
+			<p><label>CONTACT NO.</label><br> 
+			<input type="text" name="" required max="10" id="ctn"></p>
+
+			<p><label>PASSWORD</label><br>
+			<input type="password" name="" required max="10" ></p>
+
+
+			<p><input type="submit" name="" onclick="detail()" id="submit"> </p>
+			
+		</form>
+		</div>
+  	</div>
+</body>
+</html>
